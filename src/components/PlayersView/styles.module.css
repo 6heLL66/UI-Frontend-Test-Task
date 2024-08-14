@@ -9,7 +9,6 @@
     gap: 2px;
 }
 
-
 .tooltip_container {
     display: flex;
     font-weight: 900;
@@ -37,7 +36,7 @@
     height: 32px;
     cursor: pointer;
     background: transparent;
-    border: 1px solid #91C9FF;
+    border: 1px solid #91c9ff;
     outline: none;
     transition: 500ms ease-in-out;
     color: white;
@@ -46,5 +45,5 @@
 }
 
 .tooltip_container button:hover {
-    background: #4F95DA;
+    background: #4f95da;
 }
