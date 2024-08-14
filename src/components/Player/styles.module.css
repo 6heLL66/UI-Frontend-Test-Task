@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    padding: 8px 32px;
+    border-bottom: 2px solid white;
+
+    border-radius: 2px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.dead {
+    color: #d32f2f;
+}
+
+.alive {
+    color: #4caf50;
+}
+
+.ceil_align {
+    min-width: 120px;
+    text-align: center;
+}
+
+.ceil_align_id {
+    min-width: 30px;
+    text-align: center;
+}

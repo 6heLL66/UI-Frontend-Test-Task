@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.container_left_bg, .container_right_bg {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    opacity: 0.8;
+    transition: opacity 500ms;
+
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.container_left_bg:hover, .container_right_bg:hover {
+    opacity: 1;
+}
+
+.container_left_bg {
+    left: 0;
+    background: linear-gradient(to right, rgba(244,67,54,1) 0%, rgba(36,36,36,1) 100%);
+}
+
+.container_right_bg {
+    right: 0;
+    background: linear-gradient(to left, #3f50b5 0%, rgba(36,36,36,1) 100%);
+}
+
+.container_left_bg:before {
+    content: 'WINNER';
+    position: absolute;
+    left: -180px;
+    top: 40%;
+    transform: rotate(-90deg);
+}
+
+.container_right_bg:before {
+    content: 'LOSER';
+    position: absolute;
+    transform: rotate(90deg);
+    right: -95px;
+    top: 41%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    z-index: 2;
+}
+
+.team_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 64px;
+}
+
+.team_name {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.team_score {
+    font-size: 68px;
+    font-weight: 900;
+}
+
+.separator {
+    height: 90px;
+    margin: 8px 0;
+    width: 4px;
+    background: white;
+}
+
+.views {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    left: 10%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 244px;
+    padding: 42px 0;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    max-height: calc(100vh - 200px)
+}
